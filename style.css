@@ -1,0 +1,152 @@
+/* Cores - mude aqui para trocar o visual do site */
+:root {
+  --fundo: #f7f5f0;
+  --texto: #222222;
+  --destaque: #2a6f6b;
+  --destaque-escuro: #1d4f4c;
+  --claro: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: var(--destaque);
+  color: var(--claro);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: var(--claro);
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  color: var(--destaque);
+  margin-top: 0;
+}
+
+/* Apresentação */
+.apresentacao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.apresentacao img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.apresentacao div {
+  flex: 1;
+  min-width: 240px;
+}
+
+.botao-link {
+  display: inline-block;
+  color: var(--destaque);
+  font-weight: bold;
+}
+
+/* Portfólio */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--destaque);
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--destaque);
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 10px 24px;
+  background: var(--destaque);
+  color: var(--claro);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--destaque-escuro);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--destaque-escuro);
+  color: var(--claro);
+}
+
+footer p {
+  margin: 0;
+}
